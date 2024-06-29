@@ -1,4 +1,4 @@
-const nomeHotel = "Hotel XYZ";
+const nomeHotel = "Hotel da Jessi";
 const totalQuartos = 20;
 const quartos = Array(totalQuartos).fill(null);
 const maxCadastros = 15;
