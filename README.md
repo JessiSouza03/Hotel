@@ -13,7 +13,8 @@
 # Exercício 4: Que horas você pode?
 
 - Simula a gestão de eventos no hotel, incluindo seleção de auditório, verificação de disponibilidade, cálculo de garçons necessários e serviços de buffet.
-Exercício 5: Álcool ou gasolina?
+  
+# Exercício 5: Álcool ou gasolina?
 
 - Determina qual posto de combustível oferece o melhor preço para abastecer um carro do hotel, baseado nos preços de álcool e gasolina.
   
