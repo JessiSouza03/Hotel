@@ -16,7 +16,7 @@
 Exercício 5: Álcool ou gasolina?
 
 - Determina qual posto de combustível oferece o melhor preço para abastecer um carro do hotel, baseado nos preços de álcool e gasolina.
-- 
+  
 # Exercício 6: Ar puro, finalmente.
 
 - Calcula orçamentos para manutenção de ar-condicionado com possibilidade de descontos, exibindo o menor orçamento entre as empresas informadas.
