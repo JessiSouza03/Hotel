@@ -1,4 +1,4 @@
-# Exercício 1: Quantos quartos são?##
+# Exercício 1: Quantos quartos são?
 
 - Desenvolve um sistema de reservas para um hotel com 20 quartos. Permite ao usuário calcular o custo da hospedagem com base na diária e dias de estadia, além de realizar reservas em quartos disponíveis.
 
