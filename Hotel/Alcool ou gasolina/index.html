@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álcool ou Gasolina?</title>
+</head>
+<body>
+    <h1>Álcool ou Gasolina?</h1>
+    <div id="Caixa">
+        <label for="nome">Qual seu nome?:</label>
+        <input type="text" id="nome"><br>
+        <h2>Preços no Posto Wayne Oil</h2>
+        <label for="waynealc">Valor do álcool:</label>
+        <input type="number" id="waynealc" step="0.01"><br>
+        <label for="waynegas">Valor da gasolina:</label>
+        <input type="number" id="waynegas" step="0.01"><br>
+        
+        <h2>Preços no Posto Stark Petrol</h2>
+        <label for="starkalc">Valor do álcool:</label>
+        <input type="number" id="starkalc" step="0.01"><br>
+        <label for="starkgas">Valor da gasolina:</label>
+        <input type="number" id="starkgas" step="0.01"><br>
+        
+        <button onclick="calcularMelhorOpcao()">Calcular Melhor Opção</button>
+        <p id="resultMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

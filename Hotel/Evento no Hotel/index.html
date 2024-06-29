@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL DA JESSIIIIII</title>
+</head>
+<body>
+    <h1 id="welcomeMessage">Bem-vindo ao Hotel da Jessi</h1>
+    <div id="eventDiv">
+        <h2>Reserva de Eventos</h2>
+        <label for="numConvidados">Número de Convidados:</label>
+        <input type="number" id="numConvidados"><br>
+        <button onclick="verificarAuditório()">Verificar Auditório</button>
+        <p id="mensagemAuditório"></p>
+    </div>
+    <div id="scheduleDiv" style="display: none;">
+        <h2>Agendamento</h2>
+        <label for="diaEvento">Dia do Evento:</label>
+        <input type="text" id="diaEvento"><br>
+        <label for="horaEvento">Hora do Evento:</label>
+        <input type="number" id="horaEvento"><br>
+        <label for="nomeEmpresa">Nome da Empresa:</label>
+        <input type="text" id="nomeEmpresa"><br>
+        <button onclick="verificarDisponibilidade()">Verificar Disponibilidade</button>
+        <p id="mensagemDisponibilidade"></p>
+    </div>
+    <div id="staffDiv" style="display: none;">
+        <h2>Quantidade de Trabalhadores</h2>
+       /<label for="numGarçons">Número de Garçons que você planejou para o evento:</label>
+        <input type="number" id="numGarçons"><br>
+        <label for="horasEvento">Total de Horas do Evento:</label>
+        <input type="number" id="horasEvento"><br>
+        <button onclick="calcularGarçons()">Calcular Garçons</button>
+        <p id="mensagemGarçons"></p>
+    </div>
+    <div id="buffetDiv" style="display: none;">
+        <h2>Custo do Buffet</h2>
+        <p id="quantidadesBuffet"></p>
+        <button onclick="calcularBuffet()">Calcular Buffet</button>
+        <p id="custoBuffet"></p>
+    </div>
+    <div id="finalDiv" style="display: none;">
+        <h2>Relatório Final</h2>
+        <p id="relatorioFinal"></p>
+        <button onclick="efetuarReserva()">Gostaria de efetuar a reserva? S/N</button>
+        <p id="mensagemReserva"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel da Jessi</title>
+</head>
+<body>
+    <h1 id="welcomeMessage">Bem vindo ao Hotel da Jessi</h1>
+    <div id="loginDiv">
+        <label for="username">Nome:</label>
+        <input type="text" id="username"><br>
+        <label for="password">Senha:</label>
+        <input type="password" id="password"><br>
+        <button onclick="login()">Entrar</button>
+    </div>
+    <div id="menuDiv" style="display: none;">
+        <h2 id="personalWelcome"></h2>
+        <button onclick="menuOption(1)">Reservar Quarto</button>
+        <button onclick="menuOption(2)">Cadastrar Hóspedes</button>
+        <button onclick="menuOption(3)">Cadastro e Pesquisa de Hóspedes</button>
+        <button onclick="logout()">Sair</button>
+    </div>
+    <div id="reservationDiv" style="display: none;">
+        <label for="valorDiaria">Qual o valor padrão da diária?</label>
+        <input type="number" id="valorDiaria"><br>
+        <label for="numDias">Quantas diárias serão necessárias?</label>
+        <input type="number" id="numDias"><br>
+        <button onclick="validarReserva()">Continuar</button>
+        <p id="mensagemReserva"></p>
+    </div>
+    <div id="cadastroDiv" style="display: none;">
+        <label for="valorDiariaCadastro">Qual o valor padrão da diária?</label>
+        <input type="number" id="valorDiariaCadastro"><br>
+        <button onclick="iniciarCadastro()">Iniciar Cadastro</button>
+        <p id="mensagemCadastro"></p>
+    </div>
+    <div id="cadastroPesquisaDiv" style="display: none;">
+        <h2>Cadastro e Pesquisa de Hóspedes</h2>
+        <button onclick="opcaoCadastroPesquisa(1)">Cadastrar</button>
+        <button onclick="opcaoCadastroPesquisa(2)">Pesquisar</button>
+        <button onclick="opcaoCadastroPesquisa(3)">Listar</button>
+        <button onclick="opcaoCadastroPesquisa(4)">Sair</button>
+        <div id="opcaoCadastro" style="display: none;">
+            <label for="nomeHospedeCadastro">Nome do Hóspede:</label>
+            <input type="text" id="nomeHospedeCadastro"><br>
+            <button onclick="cadastrarHospede()">Cadastrar</button>
+            <p id="mensagemCadastroPesquisa"></p>
+        </div>
+        <div id="opcaoPesquisa" style="display: none;">
+            <label for="nomeHospedePesquisa">Nome do Hóspede:</label>
+            <input type="text" id="nomeHospedePesquisa"><br>
+            <button onclick="pesquisarHospede()">Pesquisar</button>
+            <p id="mensagemPesquisa"></p>
+        </div>
+        <div id="opcaoListar" style="display: none;">
+            <button onclick="listarHospedes()">Listar Hóspedes</button>
+            <ul id="listaHospedes"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
